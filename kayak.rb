@@ -23,6 +23,27 @@ class Kayak
     assert_valid_response(@session_id, ident['error'])
   end
 
+  # Gather flights.
+  #  basicmode -> must be "true"
+  #  oneway -> "y" or "n"
+  #  origin -> three-letter airport code (e.g. "BOS")
+  #  destination -> three-letter airport code (e.g. "SFO")
+  #  depart_date -> MM/DD/YYYY
+  #  return_date -> MM/DD/YYYY
+  #  depart_time -> Values:
+  #           "a" = any time; "r"=early morning; "m"=morning;
+  #           "12"=noon; "n"=afternoon; "e"=evening; "l"=night
+  #  return_time -> see depart_time
+  #  travelers -> integer from 1-8
+  #  cabin -> f, b or e(default) (first, business, economy/coach)
+  #  action -> must be "doFlights"
+  #  apimode -> must be "1"
+  #  _sid_ -> the Session ID you get from GetSession
+  #  version -> The version of the API the client is expecting. The only current supported version is "1"
+  def flights(from, to)
+    assert_session
+  end
+
   private
   def get(url, query)
     options = {:query => query}
