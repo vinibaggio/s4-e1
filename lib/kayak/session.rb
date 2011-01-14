@@ -1,23 +1,15 @@
-require 'yaml'
-
 # Represents the Kayak API.
 # Check http://www.kayak.com/labs/api/search/spec.html for more info
 module Kayak
-  class Connection
+  class Session
     include HTTParty
 
     KAYAK_URL = "http://api.kayak.com"
 
-    attr_reader :username, :key
+    def initialize(token)
+      @token = token
 
-    def initialize(config_file='kayak.yml')
-      config = YAML::load(open(config_file))
-      @username = config['kayak']['username']
-      @key = config['kayak']['key']
-    end
-
-    def start_session
-      ident = get('/k/ident/apisession', {:token => @key})['ident']
+      ident = get('/k/ident/apisession', {:token => @token})['ident']
       @session_id = ident['sid']
 
       assert_valid_response(@session_id, ident['error'])
@@ -41,8 +33,6 @@ module Kayak
     #  _sid_ -> the Session ID you get from GetSession
     #  version -> The version of the API the client is expecting. The only current supported version is "1"
     def flights(from, to)
-      assert_session
-
       # query = {
       #   :basicmode => 'true',
       #   :oneway => 'y',
@@ -74,10 +64,6 @@ module Kayak
       else
         raise InvalidSessionError, error
       end
-    end
-
-    def assert_session
-      raise InvalidSessionError, 'you need a session to perform calls' unless @session_id
     end
   end
 end
