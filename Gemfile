@@ -1,4 +1,7 @@
 source :rubygems
 
 gem 'httparty'
-gem 'webmock'
+
+group :test do
+  gem 'webmock', :require => 'webmock/test_unit'
+end

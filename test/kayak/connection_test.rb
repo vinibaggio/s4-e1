@@ -1,11 +1,8 @@
-require 'test/unit'
-require 'webmock/test_unit'
+require File.expand_path(File.dirname(__FILE__) + '/../test_helper')
 
-require File.expand_path(File.dirname(__FILE__) + '/../kayak')
-
-class KayakTest < Test::Unit::TestCase
+class KayakConnectionTest < Test::Unit::TestCase
   def setup
-    @kayak = Kayak.new('kayak.yml.example')
+    @kayak = Kayak::Connection.new('kayak.yml.example')
   end
 
   def test_initialization
