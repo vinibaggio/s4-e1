@@ -17,6 +17,16 @@ class TestKayakSession < Test::Unit::TestCase
     end
   end
 
+  def test_get_flights
+    stub_valid_session
+    stub_flight_search
+
+    kayak = Kayak::Session.new('token123')
+    search = kayak.flights('SFO', 'GRU')
+
+    assert_equal true, search.instance_of?(Kayak::Search)
+  end
+
   protected
   def stub_invalid_session
     stub_request(:get, "http://api.kayak.com/k/ident/apisession?token=token123").
@@ -36,12 +46,38 @@ class TestKayakSession < Test::Unit::TestCase
       to_return(:status => 200, :body => <<-BODY, :headers => {})
         <?xml version="1.0"?>
         <ident>
-          <uid>1973099132</uid>
-          <sid>20-$ki6bvrByf9Y1B9ANP7H</sid>
-          <token>jGNGZhB_jnwyhL1EGf$ZkQ</token>
+          <uid>123123</uid>
+          <sid>blablabla</sid>
+          <token>cool_token</token>
           <error></error>
         </ident>
     BODY
+  end
 
+  def stub_flight_search
+    query =  {
+      :basicmode => 'true',
+      :oneway => 'y',
+      :origin => 'SFO',
+      :destination => 'GRU',
+      :depart_date => Date.today.strftime('%m/%d/%Y'),
+      :return_date => Date.today.strftime('%m/%d/%Y'),
+      :depart_time => 'a', # All
+      :return_time => 'a',
+      :travelers => '1',
+      :cabin => 'e',
+      :action => 'doFlights',
+      :apimode => '1',
+      :_sid_ => 'blablabla'
+    }
+
+    stub_request(:get, "http://api.kayak.com/s/apisearch").with(:query => query).
+      to_return(:status => 200, :body =>  <<-BODY)
+        <?xml version="1.0"?>
+        <search>
+          <url>![CDATA[http://www.kayak.com/h/basic?rss=1&searchid=8749JDWwiBUg4OF3ts88]]</url>
+          <searchid>8749JDWwiBUg4OF3ts88</searchid>
+        </search>
+      BODY
   end
 end

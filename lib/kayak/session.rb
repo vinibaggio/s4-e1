@@ -2,9 +2,9 @@
 # Check http://www.kayak.com/labs/api/search/spec.html for more info
 module Kayak
   class Session
-    include HTTParty
+    attr_reader :session_id
 
-    KAYAK_URL = "http://api.kayak.com"
+    include HTTParty
 
     def initialize(token)
       @token = token
@@ -16,6 +16,9 @@ module Kayak
     end
 
     # Gather flights.
+    # TODO Make it more configurable, like the arriving time or the travel date
+    #
+    # Kayak's API tells that:
     #  basicmode -> must be "true"
     #  oneway -> "y" or "n"
     #  origin -> three-letter airport code (e.g. "BOS")
@@ -33,37 +36,47 @@ module Kayak
     #  _sid_ -> the Session ID you get from GetSession
     #  version -> The version of the API the client is expecting. The only current supported version is "1"
     def flights(from, to)
-      # query = {
-      #   :basicmode => 'true',
-      #   :oneway => 'y',
-      #   :origin => from,
-      #   :destination => to,
-      #   :depart_date => Date.today.to_s,
-      #   :return_date => Date.today.to_s,
-      #   :depart_time => 'a', # All
-      #   :return_time => 'a',
-      #   :travelers => 1,
-      #   :cabin => 'e',
-      #   :action => 'doFlights',
-      #   :apimode => '1',
-      #   :_sid_ => @session_id
-      # }
-      # get('/s/apisearch', query)
+       query = {
+         :basicmode => 'true',
+         :oneway => 'y',
+         :origin => from,
+         :destination => to,
+         :depart_date => format_date(Date.today),
+         :return_date => format_date(Date.today),
+         :depart_time => 'a', # All
+         :return_time => 'a',
+         :travelers => 1,
+         :cabin => 'e',
+         :action => 'doFlights',
+         :apimode => '1',
+         :_sid_ => @session_id
+       }
+
+      response = get('/s/apisearch', query)
+      Search.new(self, response['search']['searchid'])
     end
 
     private
     def get(url, query)
       options = {:query => query}
-      response = self.class.get(KAYAK_URL + url, options)
-      Crack::XML.parse(response.parsed_response)
+      response = self.class.get(Kayak.base_url + url, options).parsed_response
+
+      # Manually parse when content-type is not XML (but it is actually a XML)
+      unless response.is_a?(Hash)
+        response = Crack::XML.parse(response)
+      end
+
+      response
     end
 
     def assert_valid_response(response, error)
-      if response
-        true
-      else
+      unless response
         raise InvalidSessionError, error
       end
+    end
+
+    def format_date(date)
+      date.strftime("%m/%d/%Y")
     end
   end
 end
