@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class KayakConnectionTest < Test::Unit::TestCase
+class TestKayakConnection < Test::Unit::TestCase
   def setup
     @kayak = Kayak::Connection.new('kayak.yml.example')
   end
