@@ -50,6 +50,7 @@ module Kayak
   end
 end
 
+require 'kayak/cli'
 require 'kayak/flight'
 require 'kayak/trip'
 require 'kayak/search'

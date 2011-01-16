@@ -61,7 +61,12 @@ module Kayak
       options = {:query => query}
       response = self.class.get(Kayak.base_url + url, options).parsed_response
 
-      # Manually parse when content-type is not XML (but it is actually a XML)
+      # Manually parse when content-type is not XML (but it is actually a XML).
+      #
+      # That happens because HTTParty relies on Content-Type to check if it
+      # should parse a XML or a JSON. There are calls that, even if response
+      # is XML, Content-Type isn't set by the server, so nothing happens.
+      # In that case, we manually use Crack to parse that.
       unless response.is_a?(Hash)
         response = Crack::XML.parse(response)
       end
