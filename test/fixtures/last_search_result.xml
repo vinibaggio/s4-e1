@@ -3,7 +3,7 @@
   <searchinstance></searchinstance>
   <searchid>N8p12x</searchid>
   <count>50</count>
-  <morepending>true</morepending>
+  <morepending></morepending>
 <!-- api results -->
    <trips>
      <trip id="668eeeed4d115ee64e593b5a2167318b">
@@ -844,4 +844,3 @@
      </trip>
    </trips>
  </searchresult>
-
