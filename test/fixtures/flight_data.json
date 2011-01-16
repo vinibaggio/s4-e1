@@ -1,0 +1,38 @@
+{
+  "leg": { 
+    "airline":"CO", 
+      "airline_display":"Continental", 
+      "orig":"GRU", 
+      "dest":"LAX", 
+      "depart":"2011/01/16 23:05", 
+      "arrive":"2011/01/17 16:15", 
+      "stops":"1", 
+      "duration_minutes":"1390", 
+      "cabin":"Economy", 
+      "segment":[
+      {
+        "airline":"CO", 
+        "flight":"30", 
+        "duration_minutes":"600", 
+        "equip":"Boeing 767-200", 
+        "miles":"4774", 
+        "dt":"2011/01/16 23:05", 
+        "o":"GRU", 
+        "at":"2011/01/17 06:05", 
+        "d":"EWR", 
+        "cabin":"Economy"
+      }, {
+        "airline":"CO", 
+        "flight":"17", 
+        "duration_minutes":"365", 
+        "equip":"Boeing 737-800", 
+        "miles":"2447", 
+        "dt":"2011/01/17 13:10", 
+        "o":"EWR", 
+        "at":"2011/01/17 16:15", 
+        "d":"LAX", 
+        "cabin":"Economy"
+      }
+    ]
+  }
+}

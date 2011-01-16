@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<searchresult>
+  <searchinstance></searchinstance>
+  <searchid>N8p12x</searchid>
+  <count>340</count>
+  <morepending></morepending>
+<!-- api results -->
+   <trips>
+     <trip id="668eeeed4d115ee64e593b5a2167318b">
+       <price url="/book/flight?code=-956547934.N8p12x.0.F.TA,ITA.0.668eeeed4d115ee64e593b5a2167318b&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">738</price>
+       <legs>
+         <leg>
+           <airline>TA</airline>
+           <airline_display>Taca Intl Air</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 18:50</depart>
+           <arrive>2011/01/17 18:35</arrive>
+           <stops>2</stops>
+           <duration_minutes>1785</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>TA</airline>
+             <flight>29</flight>
+             <duration_minutes>315</duration_minutes>
+             <equip>Airbus A319</equip>
+             <miles>2158</miles>
+             <dt>2011/01/16 18:50</dt>
+             <o>GRU</o>
+             <at>2011/01/16 21:05</at>
+             <d>LIM</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>TA</airline>
+             <flight>40</flight>
+             <duration_minutes>260</duration_minutes>
+             <equip>Airbus A321-100/200</equip>
+             <miles>1956</miles>
+             <dt>2011/01/17 10:35</dt>
+             <o>LIM</o>
+             <at>2011/01/17 13:55</at>
+             <d>SAL</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>TA</airline>
+             <flight>528</flight>
+             <duration_minutes>330</duration_minutes>
+             <equip>Airbus A320-100/200</equip>
+             <miles>2303</miles>
+             <dt>2011/01/17 15:05</dt>
+             <o>SAL</o>
+             <at>2011/01/17 18:35</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="476ca748534eb8285bc46e7d0811b95a">
+       <price url="/book/flight?code=1256111828.N8p12x.0.F.ORBITZAIR,ORBITZAIR.0.476ca748534eb8285bc46e7d0811b95a&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">752</price>
+       <legs>
+         <leg>
+           <airline>MULT</airline>
+           <airline_display>Multiple Airlines</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 18:50</depart>
+           <arrive>2011/01/17 22:26</arrive>
+           <stops>2</stops>
+           <duration_minutes>2016</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>TA</airline>
+             <flight>29</flight>
+             <duration_minutes>315</duration_minutes>
+             <equip>Airbus A319</equip>
+             <miles>2158</miles>
+             <dt>2011/01/16 18:50</dt>
+             <o>GRU</o>
+             <at>2011/01/16 21:05</at>
+             <d>LIM</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>TA</airline>
+             <flight>32</flight>
+             <duration_minutes>218</duration_minutes>
+             <equip>Airbus A320-100/200</equip>
+             <miles>-1</miles>
+             <dt>2011/01/17 14:15</dt>
+             <o>LIM</o>
+             <at>2011/01/17 16:53</at>
+             <d>SJO</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>LR</airline>
+             <flight>604</flight>
+             <duration_minutes>385</duration_minutes>
+             <equip>Airbus A319</equip>
+             <miles>-1</miles>
+             <dt>2011/01/17 18:01</dt>
+             <o>SJO</o>
+             <at>2011/01/17 22:26</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="4e22fbed19fa3fb9044988ef9d6f18cd">
+       <price url="/book/flight?code=913830835.N8p12x.0.F.TA,ITA.0.4e22fbed19fa3fb9044988ef9d6f18cd&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">768</price>
+       <legs>
+         <leg>
+           <airline>TA</airline>
+           <airline_display>Taca Intl Air</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 18:50</depart>
+           <arrive>2011/01/17 22:55</arrive>
+           <stops>2</stops>
+           <duration_minutes>2045</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>TA</airline>
+             <flight>29</flight>
+             <duration_minutes>315</duration_minutes>
+             <equip>Airbus A319</equip>
+             <miles>2158</miles>
+             <dt>2011/01/16 18:50</dt>
+             <o>GRU</o>
+             <at>2011/01/16 21:05</at>
+             <d>LIM</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>TA</airline>
+             <flight>40</flight>
+             <duration_minutes>260</duration_minutes>
+             <equip>Airbus A321-100/200</equip>
+             <miles>1956</miles>
+             <dt>2011/01/17 10:35</dt>
+             <o>LIM</o>
+             <at>2011/01/17 13:55</at>
+             <d>SAL</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>TA</airline>
+             <flight>7520</flight>
+             <duration_minutes>325</duration_minutes>
+             <equip>Airbus A320-100/200</equip>
+             <miles>2303</miles>
+             <dt>2011/01/17 19:30</dt>
+             <o>SAL</o>
+             <at>2011/01/17 22:55</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="f0bebad8160ec755ed0200c0b1f20ae6">
+       <price url="/book/flight?code=-1015842493.N8p12x.0.F.CM,ITA.0.f0bebad8160ec755ed0200c0b1f20ae6&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">794</price>
+       <legs>
+         <leg>
+           <airline>CM</airline>
+           <airline_display>Copa Airlines</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 13:45</depart>
+           <arrive>2011/01/16 22:59</arrive>
+           <stops>1</stops>
+           <duration_minutes>914</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CM</airline>
+             <flight>700</flight>
+             <duration_minutes>417</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>3158</miles>
+             <dt>2011/01/16 13:45</dt>
+             <o>GRU</o>
+             <at>2011/01/16 17:42</at>
+             <d>PTY</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CM</airline>
+             <flight>302</flight>
+             <duration_minutes>415</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>3009</miles>
+             <dt>2011/01/16 19:04</dt>
+             <o>PTY</o>
+             <at>2011/01/16 22:59</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="2f79b21f26287549c2c7395a8a57ce50">
+       <price url="/book/flight?code=-313272001.N8p12x.0.F.ORBITZAIR,ORBITZAIR.0.2f79b21f26287549c2c7395a8a57ce50&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1367</price>
+       <legs>
+         <leg>
+           <airline>AM</airline>
+           <airline_display>Aeromexico</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:55</depart>
+           <arrive>2011/01/17 21:05</arrive>
+           <stops>1</stops>
+           <duration_minutes>1630</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>AM</airline>
+             <flight>15</flight>
+             <duration_minutes>575</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>4616</miles>
+             <dt>2011/01/16 23:55</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:30</at>
+             <d>MEX</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>AM</airline>
+             <flight>648</flight>
+             <duration_minutes>255</duration_minutes>
+             <equip>Boeing 737</equip>
+             <miles>1552</miles>
+             <dt>2011/01/17 18:50</dt>
+             <o>MEX</o>
+             <at>2011/01/17 21:05</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="aa038af0b353806cad89cbb04d3e6173">
+       <price url="/book/flight?code=-109200434.N8p12x.0.F.ORBITZAIR,ORBITZAIR.0.aa038af0b353806cad89cbb04d3e6173&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1367</price>
+       <legs>
+         <leg>
+           <airline>AM</airline>
+           <airline_display>Aeromexico</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:55</depart>
+           <arrive>2011/01/17 12:15</arrive>
+           <stops>1</stops>
+           <duration_minutes>1100</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>AM</airline>
+             <flight>15</flight>
+             <duration_minutes>575</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>4616</miles>
+             <dt>2011/01/16 23:55</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:30</at>
+             <d>MEX</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>AM</airline>
+             <flight>19</flight>
+             <duration_minutes>255</duration_minutes>
+             <equip>Boeing 737</equip>
+             <miles>1552</miles>
+             <dt>2011/01/17 10:00</dt>
+             <o>MEX</o>
+             <at>2011/01/17 12:15</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="13c8ad1f927dd2b9c259c86b405d04c6">
+       <price url="/book/flight?code=1509296860.N8p12x.0.F.UA,ITA.0.13c8ad1f927dd2b9c259c86b405d04c6&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1518</price>
+       <legs>
+         <leg>
+           <airline>UA</airline>
+           <airline_display>United</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:00</depart>
+           <arrive>2011/01/17 11:03</arrive>
+           <stops>1</stops>
+           <duration_minutes>1083</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>635</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>5235</miles>
+             <dt>2011/01/16 23:00</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:35</at>
+             <d>ORD</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>271</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>1740</miles>
+             <dt>2011/01/17 08:32</dt>
+             <o>ORD</o>
+             <at>2011/01/17 11:03</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="18ed5b1b27884a49292c8812631d5430">
+       <price url="/book/flight?code=833287148.N8p12x.0.F.CO,ITA.0.18ed5b1b27884a49292c8812631d5430&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 16:15</arrive>
+           <stops>1</stops>
+           <duration_minutes>1370</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>137</flight>
+             <duration_minutes>227</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 14:28</dt>
+             <o>IAH</o>
+             <at>2011/01/17 16:15</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="2b44d10ebb400499e249565622512951">
+       <price url="/book/flight?code=-2013962959.N8p12x.0.F.CO,ITA.0.2b44d10ebb400499e249565622512951&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 17:28</arrive>
+           <stops>1</stops>
+           <duration_minutes>1443</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>795</flight>
+             <duration_minutes>228</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 15:40</dt>
+             <o>IAH</o>
+             <at>2011/01/17 17:28</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="31a3557dfd72a3e80af477bdf00d32cf">
+       <price url="/book/flight?code=-1833451832.N8p12x.0.F.CO,ITA.0.31a3557dfd72a3e80af477bdf00d32cf&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 15:06</arrive>
+           <stops>1</stops>
+           <duration_minutes>1301</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>1695</flight>
+             <duration_minutes>231</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 13:15</dt>
+             <o>IAH</o>
+             <at>2011/01/17 15:06</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="78517c4f5cc80fc9f68e27c669ecc505">
+       <price url="/book/flight?code=-920416477.N8p12x.0.F.CO,ITA.0.78517c4f5cc80fc9f68e27c669ecc505&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 11:11</arrive>
+           <stops>1</stops>
+           <duration_minutes>1066</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>1495</flight>
+             <duration_minutes>226</duration_minutes>
+             <equip>Boeing 757-300</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 09:25</dt>
+             <o>IAH</o>
+             <at>2011/01/17 11:11</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="b133639d568ab8dde76ba61dca1c4e14">
+       <price url="/book/flight?code=-1915124819.N8p12x.0.F.CO,ITA.0.b133639d568ab8dde76ba61dca1c4e14&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 09:31</arrive>
+           <stops>1</stops>
+           <duration_minutes>966</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>52</flight>
+             <duration_minutes>226</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 07:45</dt>
+             <o>IAH</o>
+             <at>2011/01/17 09:31</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="c6d2b932f71d1d0ae4dab29c201707d4">
+       <price url="/book/flight?code=-817841204.N8p12x.0.F.CO,ITA.0.c6d2b932f71d1d0ae4dab29c201707d4&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1523</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:25</depart>
+           <arrive>2011/01/17 13:35</arrive>
+           <stops>1</stops>
+           <duration_minutes>1210</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>92</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4909</miles>
+             <dt>2011/01/16 23:25</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:25</at>
+             <d>IAH</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>1605</flight>
+             <duration_minutes>225</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>1375</miles>
+             <dt>2011/01/17 11:50</dt>
+             <o>IAH</o>
+             <at>2011/01/17 13:35</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="259fd0ab85d78b9c6539f265753afe24">
+       <price url="/book/flight?code=223953962.N8p12x.0.F.UA,ITA.0.259fd0ab85d78b9c6539f265753afe24&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>UA</airline>
+           <airline_display>United</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:00</depart>
+           <arrive>2011/01/17 14:30</arrive>
+           <stops>1</stops>
+           <duration_minutes>1290</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>635</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>5235</miles>
+             <dt>2011/01/16 23:00</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:35</at>
+             <d>ORD</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>UA</airline>
+             <flight>945</flight>
+             <duration_minutes>270</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>1740</miles>
+             <dt>2011/01/17 12:00</dt>
+             <o>ORD</o>
+             <at>2011/01/17 14:30</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="28d0d05c496c351557db6f2054c715af">
+       <price url="/book/flight?code=1844911226.N8p12x.0.F.CO,ITA.0.28d0d05c496c351557db6f2054c715af&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:05</depart>
+           <arrive>2011/01/17 11:48</arrive>
+           <stops>1</stops>
+           <duration_minutes>1123</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>30</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4774</miles>
+             <dt>2011/01/16 23:05</dt>
+             <o>GRU</o>
+             <at>2011/01/17 06:05</at>
+             <d>EWR</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>1402</flight>
+             <duration_minutes>378</duration_minutes>
+             <equip>Boeing 757-300</equip>
+             <miles>2447</miles>
+             <dt>2011/01/17 08:30</dt>
+             <o>EWR</o>
+             <at>2011/01/17 11:48</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="2e693fc9c6faef064bd9b631c1bcc886">
+       <price url="/book/flight?code=-1059386249.N8p12x.0.F.UA,ITA.0.2e693fc9c6faef064bd9b631c1bcc886&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>UA</airline>
+           <airline_display>United</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:00</depart>
+           <arrive>2011/01/17 15:28</arrive>
+           <stops>1</stops>
+           <duration_minutes>1348</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>635</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>5235</miles>
+             <dt>2011/01/16 23:00</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:35</at>
+             <d>ORD</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>UA</airline>
+             <flight>107</flight>
+             <duration_minutes>263</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>1740</miles>
+             <dt>2011/01/17 13:05</dt>
+             <o>ORD</o>
+             <at>2011/01/17 15:28</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="3a45a460d4ebd508367c7716d323fd2e">
+       <price url="/book/flight?code=-1852303421.N8p12x.0.F.UA,ITA.0.3a45a460d4ebd508367c7716d323fd2e&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>UA</airline>
+           <airline_display>United</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:00</depart>
+           <arrive>2011/01/17 21:14</arrive>
+           <stops>1</stops>
+           <duration_minutes>1694</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>635</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>5235</miles>
+             <dt>2011/01/16 23:00</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:35</at>
+             <d>ORD</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>UA</airline>
+             <flight>839</flight>
+             <duration_minutes>271</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>1740</miles>
+             <dt>2011/01/17 18:43</dt>
+             <o>ORD</o>
+             <at>2011/01/17 21:14</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="4ad268789c20099b288d567039cd1ce7">
+       <price url="/book/flight?code=-1699120581.N8p12x.0.F.UA,ITA.0.4ad268789c20099b288d567039cd1ce7&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>UA</airline>
+           <airline_display>United</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:00</depart>
+           <arrive>2011/01/17 12:44</arrive>
+           <stops>1</stops>
+           <duration_minutes>1184</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>UA</airline>
+             <flight>842</flight>
+             <duration_minutes>635</duration_minutes>
+             <equip>Boeing 777</equip>
+             <miles>5235</miles>
+             <dt>2011/01/16 23:00</dt>
+             <o>GRU</o>
+             <at>2011/01/17 05:35</at>
+             <d>ORD</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>UA</airline>
+             <flight>531</flight>
+             <duration_minutes>268</duration_minutes>
+             <equip>Boeing 767-300</equip>
+             <miles>1740</miles>
+             <dt>2011/01/17 10:16</dt>
+             <o>ORD</o>
+             <at>2011/01/17 12:44</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="59ba401b5a09b89b91c9e8da46812b1e">
+       <price url="/book/flight?code=-1145459571.N8p12x.0.F.CO,ITA.0.59ba401b5a09b89b91c9e8da46812b1e&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:05</depart>
+           <arrive>2011/01/17 19:35</arrive>
+           <stops>1</stops>
+           <duration_minutes>1590</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>30</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4774</miles>
+             <dt>2011/01/16 23:05</dt>
+             <o>GRU</o>
+             <at>2011/01/17 06:05</at>
+             <d>EWR</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>1055</flight>
+             <duration_minutes>370</duration_minutes>
+             <equip>Boeing 757-200</equip>
+             <miles>2447</miles>
+             <dt>2011/01/17 16:25</dt>
+             <o>EWR</o>
+             <at>2011/01/17 19:35</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+     <trip id="7d36dc0a09b9a586e2c448c2cce46755">
+       <price url="/book/flight?code=-1751263009.N8p12x.0.F.CO,ITA.0.7d36dc0a09b9a586e2c448c2cce46755&amp;_sid_=28-_yYCIVlTdxAfPIKFFSEm" currency="USD">1525</price>
+       <legs>
+         <leg>
+           <airline>CO</airline>
+           <airline_display>Continental</airline_display>
+           <orig>GRU</orig>
+           <dest>LAX</dest>
+           <depart>2011/01/16 23:05</depart>
+           <arrive>2011/01/17 16:15</arrive>
+           <stops>1</stops>
+           <duration_minutes>1390</duration_minutes>
+           <cabin>Economy</cabin>
+           <segment>
+             <airline>CO</airline>
+             <flight>30</flight>
+             <duration_minutes>600</duration_minutes>
+             <equip>Boeing 767-200</equip>
+             <miles>4774</miles>
+             <dt>2011/01/16 23:05</dt>
+             <o>GRU</o>
+             <at>2011/01/17 06:05</at>
+             <d>EWR</d>
+             <cabin>Economy</cabin>
+           </segment>
+           <segment>
+             <airline>CO</airline>
+             <flight>17</flight>
+             <duration_minutes>365</duration_minutes>
+             <equip>Boeing 737-800</equip>
+             <miles>2447</miles>
+             <dt>2011/01/17 13:10</dt>
+             <o>EWR</o>
+             <at>2011/01/17 16:15</at>
+             <d>LAX</d>
+             <cabin>Economy</cabin>
+           </segment>
+         </leg>
+       </legs>
+     </trip>
+   </trips>
+ </searchresult>
+
