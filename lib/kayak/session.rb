@@ -35,14 +35,14 @@ module Kayak
     #  apimode -> must be "1"
     #  _sid_ -> the Session ID you get from GetSession
     #  version -> The version of the API the client is expecting. The only current supported version is "1"
-    def flights(from, to)
+    def search_flights(from, to, whn)
        query = {
          :basicmode => 'true',
          :oneway => 'y',
          :origin => from,
          :destination => to,
-         :depart_date => format_date(Date.today),
-         :return_date => format_date(Date.today),
+         :depart_date => format_date(whn),
+         :return_date => format_date(whn),
          :depart_time => 'a', # All
          :return_time => 'a',
          :travelers => 1,

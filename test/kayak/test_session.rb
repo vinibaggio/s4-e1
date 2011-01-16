@@ -22,7 +22,7 @@ class TestKayakSession < Test::Unit::TestCase
     stub_flight_search
 
     kayak = Kayak::Session.new('token123')
-    search = kayak.flights('SFO', 'GRU')
+    search = kayak.search_flights('SFO', 'GRU', Date.today)
 
     assert_equal true, search.instance_of?(Kayak::Search)
   end
