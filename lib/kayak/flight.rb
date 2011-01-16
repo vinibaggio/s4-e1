@@ -4,9 +4,9 @@ module Kayak
     def initialize(segment)
       @airline_code = segment['airline']
       @duration_minutes = segment['duration_minutes'].to_i
-      @origin = segment['o'] # TODO Change that to the real name
+      @origin = segment['o']
       @departure_time = Kayak.parse_time(segment['dt'])
-      @destination = segment['d'] # TODO Change that to the real name
+      @destination = segment['d']
       @arrival_time = Kayak.parse_time(segment['at'])
       @cabin = segment['cabin'].downcase.to_sym
     end
