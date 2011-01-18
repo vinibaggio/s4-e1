@@ -12,15 +12,15 @@ module Kayak
     end
 
     def airline
-      Kayak.airline_name(@airline_code)
+      @airline_name ||= Kayak::Data.airline_name(@airline_code)
     end
 
     def origin
-      @origin_full_name ||= Kayak.airport_name(@origin)
+      @origin_full_name ||= Kayak::Data.airport_name(@origin)
     end
 
     def destination
-      @destination_full_name ||= Kayak.airport_name(@destination)
+      @destination_full_name ||= Kayak::Data.airport_name(@destination)
     end
   end
 
@@ -61,11 +61,11 @@ module Kayak
     end
 
     def origin
-      @origin_full_name ||= Kayak.airport_name(@origin)
+      @origin_full_name ||= Kayak::Data.airport_name(@origin)
     end
 
     def destination
-      @destination_full_name ||= Kayak.airport_name(@destination)
+      @destination_full_name ||= Kayak::Data.airport_name(@destination)
     end
 
   end
