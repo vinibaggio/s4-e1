@@ -7,7 +7,7 @@ module Kayak
       def fetch_session(token)
         query = { :token => token }
 
-        response = get(Kayak::BASE_URL + '/k/ident/apisession', :query => query).parsed_response
+        response = get(Kayak::BASE_URL + '/k/ident/apisession', :query => query)
 
         # Manually parse when content-type is not XML (but it is actually a XML).
         #
@@ -15,7 +15,7 @@ module Kayak
         # should parse a XML or a JSON. There are calls that, even if response
         # is XML, Content-Type isn't set by the server, so nothing happens.
         # In that case, we manually use Crack to parse that.
-        ident = Crack::XML.parse(response)['ident']
+        ident = Crack::XML.parse(response.parsed_response)['ident']
 
         [ident['sid'], ident['error']]
       end
