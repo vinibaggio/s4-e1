@@ -12,7 +12,7 @@ module Kayak
       ident = get('/k/ident/apisession', {:token => @token})['ident']
       @session_id = ident['sid']
 
-      assert_valid_response(@session_id, ident['error'])
+      validate_response(@session_id, ident['error'])
     end
 
     # Gather flights.
@@ -74,7 +74,7 @@ module Kayak
       response
     end
 
-    def assert_valid_response(response, error)
+    def validate_response(response, error)
       unless response
         raise InvalidSessionError, error
       end
