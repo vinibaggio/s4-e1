@@ -5,9 +5,9 @@ module Kayak
       @airline_code     = segment['airline']
       @duration_minutes = segment['duration_minutes'].to_i
       @origin           = segment['o']
-      @departure_time   = Kayak.parse_time(segment['dt'])
+      @departure_time   = Kayak::Format.parse_time(segment['dt'])
       @destination      = segment['d']
-      @arrival_time     = Kayak.parse_time(segment['at'])
+      @arrival_time     = Kayak::Format.parse_time(segment['at'])
       @cabin            = segment['cabin'].downcase.to_sym
     end
 
@@ -56,8 +56,8 @@ module Kayak
       @duration_minutes = flight['duration_minutes'].to_i
       @stops            = flight['stops'].to_i
       @segments         = flight['segment'].map { |s| FlightSegment.new(s) }
-      @departure_time   = Kayak.parse_time(flight['depart'])
-      @arrival_time     = Kayak.parse_time(flight['arrive'])
+      @departure_time   = Kayak::Format.parse_time(flight['depart'])
+      @arrival_time     = Kayak::Format.parse_time(flight['arrive'])
     end
 
     def origin

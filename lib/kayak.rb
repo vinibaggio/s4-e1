@@ -9,14 +9,10 @@ module Kayak
     def base_url
       "http://api.kayak.com"
     end
-
-    def parse_time(date_in_string)
-      # Supplied by Chronic
-      Time.strptime(date_in_string, "%Y/%m/%d %H:%M")
-    end
   end
 end
 
+require 'kayak/format'
 require 'kayak/cli'
 require 'kayak/data'
 require 'kayak/flight'

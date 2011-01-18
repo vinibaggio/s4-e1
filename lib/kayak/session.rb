@@ -41,8 +41,8 @@ module Kayak
          :oneway      => 'y',
          :origin      => from,
          :destination => to,
-         :depart_date => format_date(whn),
-         :return_date => format_date(whn),
+         :depart_date => Kayak::Format.date_string(whn),
+         :return_date => Kayak::Format.date_string(whn),
          :depart_time => 'a', # All
          :return_time => 'a',
          :travelers   => 1,
@@ -78,10 +78,6 @@ module Kayak
       unless response
         raise InvalidSessionError, error
       end
-    end
-
-    def format_date(date)
-      date.strftime("%m/%d/%Y")
     end
   end
 end
