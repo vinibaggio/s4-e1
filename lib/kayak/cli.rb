@@ -73,7 +73,7 @@ module Kayak
       print_trips(trips)
     end
 
-    protected
+    private
 
     def print_trips(trips)
       trips.each do |trip|

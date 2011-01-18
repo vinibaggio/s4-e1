@@ -47,7 +47,7 @@ module Kayak
       @state == :complete
     end
 
-    protected
+    private
     def parse_search_results(results)
       more_pending = results['morepending'] == 'true'
       @result_count = results['count'].to_i
