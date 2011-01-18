@@ -19,13 +19,13 @@ module Kayak
         search_qty = @result_count > 0 ? @result_count : SEARCH_QTY
         query = {
           :searchid => @search_id,
-          :c => search_qty,
-          :m => 'normal',
-          :d => 'up',
-          :s => 'price',
-          :_sid_ => @session.session_id,
-          :version => '1',
-          :apimode => '1'
+          :c        => search_qty,
+          :m        => 'normal',
+          :d        => 'up',
+          :s        => 'price',
+          :_sid_    => @session.session_id,
+          :version  => '1',
+          :apimode  => '1'
         }
 
         response = self.class.get(search_url, :query => query)

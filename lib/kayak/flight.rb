@@ -2,13 +2,13 @@ module Kayak
   class FlightSegment
     attr_reader :duration_minutes, :departure_time, :arrival_time, :cabin
     def initialize(segment)
-      @airline_code = segment['airline']
+      @airline_code     = segment['airline']
       @duration_minutes = segment['duration_minutes'].to_i
-      @origin = segment['o']
-      @departure_time = Kayak.parse_time(segment['dt'])
-      @destination = segment['d']
-      @arrival_time = Kayak.parse_time(segment['at'])
-      @cabin = segment['cabin'].downcase.to_sym
+      @origin           = segment['o']
+      @departure_time   = Kayak.parse_time(segment['dt'])
+      @destination      = segment['d']
+      @arrival_time     = Kayak.parse_time(segment['at'])
+      @cabin            = segment['cabin'].downcase.to_sym
     end
 
     def airline
@@ -49,15 +49,15 @@ module Kayak
     end
 
     def initialize(flight)
-      @airline = flight['airline_display']
-      @origin = flight['orig']
-      @destination = flight['dest']
-      @cabin = flight['cabin'].downcase.to_sym
+      @airline          = flight['airline_display']
+      @origin           = flight['orig']
+      @destination      = flight['dest']
+      @cabin            = flight['cabin'].downcase.to_sym
       @duration_minutes = flight['duration_minutes'].to_i
-      @stops = flight['stops'].to_i
-      @segments = flight['segment'].map { |s| FlightSegment.new(s) }
-      @departure_time = Kayak.parse_time(flight['depart'])
-      @arrival_time = Kayak.parse_time(flight['arrive'])
+      @stops            = flight['stops'].to_i
+      @segments         = flight['segment'].map { |s| FlightSegment.new(s) }
+      @departure_time   = Kayak.parse_time(flight['depart'])
+      @arrival_time     = Kayak.parse_time(flight['arrive'])
     end
 
     def origin
