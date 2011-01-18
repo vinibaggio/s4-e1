@@ -4,15 +4,11 @@ module Kayak
   class Session
     attr_reader :session_id
 
-    include HTTParty
-
     def initialize(token)
       @token = token
+      @session_id, error = Kayak::Api.fetch_session(@token)
 
-      ident = get('/k/ident/apisession', {:token => @token})['ident']
-      @session_id = ident['sid']
-
-      validate_response(@session_id, ident['error'])
+      validate_response(@session_id, error)
     end
 
     # Gather flights.
@@ -36,43 +32,10 @@ module Kayak
     #  _sid_ -> the Session ID you get from GetSession
     #  version -> The version of the API the client is expecting. The only current supported version is "1"
     def search_flights(from, to, whn)
-       query = {
-         :basicmode   => 'true',
-         :oneway      => 'y',
-         :origin      => from,
-         :destination => to,
-         :depart_date => Kayak::Format.date_string(whn),
-         :return_date => Kayak::Format.date_string(whn),
-         :depart_time => 'a', # All
-         :return_time => 'a',
-         :travelers   => 1,
-         :cabin       => 'e',
-         :action      => 'doFlights',
-         :apimode     => '1',
-         :_sid_       => @session_id
-       }
-
-      response = get('/s/apisearch', query)
-      Search.new(self, response['search']['searchid'])
+      Search.new(self, Kayak::Api.fetch_flight_search(@session_id, from, to, whn))
     end
 
     private
-    def get(url, query)
-      options = {:query => query}
-      response = self.class.get(Kayak::BASE_URL + url, options).parsed_response
-
-      # Manually parse when content-type is not XML (but it is actually a XML).
-      #
-      # That happens because HTTParty relies on Content-Type to check if it
-      # should parse a XML or a JSON. There are calls that, even if response
-      # is XML, Content-Type isn't set by the server, so nothing happens.
-      # In that case, we manually use Crack to parse that.
-      unless response.is_a?(Hash)
-        response = Crack::XML.parse(response)
-      end
-
-      response
-    end
 
     def validate_response(response, error)
       unless response

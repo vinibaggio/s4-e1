@@ -7,6 +7,7 @@ module Kayak
   BASE_URL = "http://api.kayak.com"
 end
 
+require 'kayak/api'
 require 'kayak/format'
 require 'kayak/cli'
 require 'kayak/data'

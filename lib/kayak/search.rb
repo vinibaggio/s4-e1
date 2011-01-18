@@ -1,7 +1,6 @@
 module Kayak
   # Represents a Kayak search. Must be polled for results.
   class Search
-    include HTTParty
     SEARCH_QTY = 10
 
     attr_reader :result_count, :results
@@ -17,19 +16,12 @@ module Kayak
     def fetch
       if not complete?
         search_qty = @result_count > 0 ? @result_count : SEARCH_QTY
-        query = {
-          :searchid => @search_id,
-          :c        => search_qty,
-          :m        => 'normal',
-          :d        => 'up',
-          :s        => 'price',
-          :_sid_    => @session.session_id,
-          :version  => '1',
-          :apimode  => '1'
-        }
 
-        response = self.class.get(search_url, :query => query)
-        parse_search_results(response.parsed_response['searchresult'])
+        results = Kayak::Api.fetch_search_results(@session.session_id,
+                                                  @search_id,
+                                                  search_qty)
+
+        parse_search_results(results)
       else
         @results
       end
@@ -67,12 +59,11 @@ module Kayak
     end
 
     def complete(results)
-      read_trips(results)
       @state = :complete
+      read_trips(results)
     end
 
     def search_url
-      Kayak::BASE_URL + '/s/apibasic/flight'
     end
 
     def read_trips(results)
