@@ -72,7 +72,7 @@ module Kayak
     end
 
     def search_url
-      Kayak.base_url + '/s/apibasic/flight'
+      Kayak::BASE_URL + '/s/apibasic/flight'
     end
 
     def read_trips(results)

@@ -4,12 +4,7 @@ Bundler.require
 
 module Kayak
   InvalidSessionError = Class.new(StandardError)
-
-  class << self
-    def base_url
-      "http://api.kayak.com"
-    end
-  end
+  BASE_URL = "http://api.kayak.com"
 end
 
 require 'kayak/format'

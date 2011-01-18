@@ -59,7 +59,7 @@ module Kayak
     private
     def get(url, query)
       options = {:query => query}
-      response = self.class.get(Kayak.base_url + url, options).parsed_response
+      response = self.class.get(Kayak::BASE_URL + url, options).parsed_response
 
       # Manually parse when content-type is not XML (but it is actually a XML).
       #
