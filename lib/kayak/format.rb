@@ -9,6 +9,10 @@ module Kayak
       def date_string(date)
         date.strftime("%m/%d/%Y")
       end
+
+      def time_string(time)
+        time.strftime("%Y/%m/%d %H:%M")
+      end
     end
   end
 end

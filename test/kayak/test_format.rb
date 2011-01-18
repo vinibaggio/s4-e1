@@ -11,4 +11,9 @@ class TestKayakFormat < Test::Unit::TestCase
     assert_equal "01/22/2010", Kayak::Format.date_string(Date.new(2010, 01, 22))
   end
 
+  def test_time_string
+    time = Time.new(2011, 01, 10, 22, 00)
+    assert_equal "2011/01/10 22:00", Kayak::Format.time_string(time)
+  end
+
 end

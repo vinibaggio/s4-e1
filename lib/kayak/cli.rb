@@ -86,24 +86,20 @@ module Kayak
           print "\t\t\t\tCabin: #{flight.cabin}\n"
           print "\t\t\t\tDuration: %.1f hours\n" % (flight.duration_minutes/60)
           print "\t\t\t\tStops: #{flight.stops}\n"
-          print "\t\t\t\tDeparture: #{format_time(flight.departure_time)}\n"
-          print "\t\t\t\tArrival: #{format_time(flight.arrival_time)}\n"
+          print "\t\t\t\tDeparture: #{Kayak::Format.time_string(flight.departure_time)}\n"
+          print "\t\t\t\tArrival: #{Kayak::Format.time_string(flight.arrival_time)}\n"
           if flight.segments.count > 0
             puts
             print "\tStops:\n"
             flight.segments.each do |segment|
               print "\t#{segment.origin} to #{segment.destination}"
-              print " @ #{format_time(segment.departure_time)}"
-              print", arrives #{format_time(segment.arrival_time)}\n"
+              print " @ #{Kayak::Format.time_string(segment.departure_time)}"
+              print", arrives #{Kayak::Format.time_string(segment.arrival_time)}\n"
             end
           end
         end
         puts
       end
-    end
-
-    def format_time(time)
-      time.strftime("%Y/%m/%d %H:%M")
     end
 
     def try_to_load_from_yaml(yaml_file)
