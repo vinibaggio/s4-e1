@@ -104,7 +104,7 @@ module Kayak
 
     def try_to_load_from_yaml(yaml_file)
       if File.exists?(yaml_file)
-        yaml = YAML.load(open(yaml_file))
+        yaml = YAML.load_file(yaml_file)
         if yaml['kayak'] # if it is present, return the value, else nil will do
           yaml['kayak']['key']
         end
