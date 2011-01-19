@@ -17,7 +17,7 @@ module Kayak
         # In that case, we manually use Crack to parse that.
         ident = Crack::XML.parse(response.parsed_response)['ident']
 
-        [ident['sid'], ident['error']]
+        {:session_id => ident['sid'], :error => ident['error']}
       end
 
       def results(session_id, search_id, quantity)

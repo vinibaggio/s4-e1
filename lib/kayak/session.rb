@@ -6,7 +6,10 @@ module Kayak
 
     def initialize(token)
       @token = token
-      @session_id, error = Kayak::Api.new_session(@token)
+
+      session_results = Kayak::Api.new_session(@token)
+      error           = session_results[:error]
+      @session_id     = session_results[:session_id]
 
       validate_response(@session_id, error)
     end
