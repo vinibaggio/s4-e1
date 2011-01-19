@@ -20,14 +20,14 @@ module Kayak
         {:session_id => ident['sid'], :error => ident['error']}
       end
 
-      def results(session_id, search_id, quantity)
+      def results(options)
         query = {
-          :searchid => search_id,
-          :c        => quantity,
+          :searchid => options[:search_id],
+          :c        => options[:quantity],
           :m        => 'normal',
           :d        => 'up',
           :s        => 'price',
-          :_sid_    => session_id,
+          :_sid_    => options[:session_id],
           :version  => '1',
           :apimode  => '1'
         }
