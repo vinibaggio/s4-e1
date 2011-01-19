@@ -21,14 +21,14 @@ module Kayak
       {:session_id => ident['sid'], :error => ident['error']}
     end
 
-    def results(options)
+    def results(params)
       query = {
-        :searchid => options[:search_id],
-        :c        => options[:quantity],
+        :searchid => params[:search_id],
+        :c        => params[:quantity],
         :m        => 'normal',
         :d        => 'up',
         :s        => 'price',
-        :_sid_    => options[:session_id],
+        :_sid_    => params[:session_id],
         :version  => '1',
         :apimode  => '1'
       }
@@ -58,21 +58,21 @@ module Kayak
     #  apimode -> must be "1"
     #  _sid_ -> the Session ID you get from GetSession
     #  version -> The version of the API the client is expecting. The only current supported version is "1"
-    def search(options)
+    def search(params)
       query = {
         :basicmode   => 'true',
         :oneway      => 'y',
-        :origin      => options[:from],
-        :destination => options[:to],
-        :depart_date => Kayak::Format.date_string(options[:when]),
-        :return_date => Kayak::Format.date_string(options[:when]),
+        :origin      => params[:from],
+        :destination => params[:to],
+        :depart_date => Kayak::Format.date_string(params[:when]),
+        :return_date => Kayak::Format.date_string(params[:when]),
         :depart_time => 'a', # All
         :return_time => 'a',
         :travelers   => 1,
         :cabin       => 'e',
         :action      => 'doFlights',
         :apimode     => '1',
-        :_sid_       => options[:session_id]
+        :_sid_       => params[:session_id]
       }
 
       response = get(Kayak::BASE_URL + '/s/apisearch', :query => query)
