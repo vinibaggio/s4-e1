@@ -4,7 +4,7 @@ module Kayak
     class << self
       # TODO Refactor the tests
 
-      def fetch_session(token)
+      def new_session(token)
         query = { :token => token }
 
         response = get(Kayak::BASE_URL + '/k/ident/apisession', :query => query)
@@ -20,7 +20,7 @@ module Kayak
         [ident['sid'], ident['error']]
       end
 
-      def fetch_search_results(session_id, search_id, quantity)
+      def results(session_id, search_id, quantity)
         query = {
           :searchid => search_id,
           :c        => quantity,
@@ -57,7 +57,7 @@ module Kayak
       #  apimode -> must be "1"
       #  _sid_ -> the Session ID you get from GetSession
       #  version -> The version of the API the client is expecting. The only current supported version is "1"
-      def fetch_flight_search(session_id, from, to, whn)
+      def search(session_id, from, to, whn)
         query = {
           :basicmode   => 'true',
           :oneway      => 'y',

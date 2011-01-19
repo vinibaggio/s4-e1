@@ -17,9 +17,9 @@ module Kayak
       if not complete?
         search_qty = @result_count > 0 ? @result_count : SEARCH_QTY
 
-        results = Kayak::Api.fetch_search_results(@session.session_id,
-                                                  @search_id,
-                                                  search_qty)
+        results = Kayak::Api.results(@session.session_id,
+                                     @search_id,
+                                     search_qty)
 
         parse_search_results(results)
       else

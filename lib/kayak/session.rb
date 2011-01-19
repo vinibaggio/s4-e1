@@ -6,13 +6,13 @@ module Kayak
 
     def initialize(token)
       @token = token
-      @session_id, error = Kayak::Api.fetch_session(@token)
+      @session_id, error = Kayak::Api.new_session(@token)
 
       validate_response(@session_id, error)
     end
 
     def search_flights(from, to, whn)
-      Search.new(self, Kayak::Api.fetch_flight_search(@session_id, from, to, whn))
+      Search.new(self, Kayak::Api.search(@session_id, from, to, whn))
     end
 
     private
