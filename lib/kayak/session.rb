@@ -15,7 +15,14 @@ module Kayak
     end
 
     def search_flights(from, to, whn)
-      Search.new(self, Kayak::Api.search(@session_id, from, to, whn))
+      options = {
+        :session_id => @session_id,
+        :from       => from,
+        :to         => to,
+        :when       => whn
+      }
+
+      Search.new(self, Kayak::Api.search(options))
     end
 
     private
